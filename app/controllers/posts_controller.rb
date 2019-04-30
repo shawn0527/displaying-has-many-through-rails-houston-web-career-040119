@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  before_action :current_user, except: [:index, :new, :create]
+
   def index
   end
 
@@ -10,5 +12,5 @@ class PostsController < ApplicationController
   def new
   end
 
-
+  
 end
