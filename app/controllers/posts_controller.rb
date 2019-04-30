@@ -17,5 +17,7 @@ class PostsController < ApplicationController
   def create
   end
 
+  def current_user
+    User.find(params[:id])
 
 end
